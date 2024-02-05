@@ -10,6 +10,7 @@ links = set()
 
 def crawl(start_link):
     driver.get(start_link)
+    #driver.page_source?
     elements = driver.find_elements_by_tag_name("a")
     urls_to_visit = set()
     for el in elements:
