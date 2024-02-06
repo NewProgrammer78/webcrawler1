@@ -1,0 +1,1 @@
+this is a selenium and python basic web scraper tool designed to get all elements from a singular specific url.
