@@ -11,7 +11,7 @@ links = set()
 def crawl(start_link):
     driver.get(start_link)
     #driver.page_source?
-    elements = driver.find_elements_by_tag_name('a')
+    elements = find_elements(By.TAG_NAME, 'div')
     urls_to_visit = set()
     for el in elements:
         urls_to_visit.add(el.get_attribute('href'))
